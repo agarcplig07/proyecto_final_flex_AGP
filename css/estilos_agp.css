@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('../imagenes/trollFace.png'), auto;
+}
+
+body {
+    background-color: black;
+    font-family: Impact, sans-serif;
+    overflow-x: hidden;
+}
+ 
+h1:first-of-type{
+    font-size: 9em;
+    color: yellow;
+}
+
+h2:first-of-type{
+    font-size: 6em;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-bottom: 5px double red; 
+    border-top: 5px double red;    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: red;
+    padding: 20px;
+    position: relative;   
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background:red;
+    transform: rotate(-2deg) scale(1.1) skewX(-10deg);
+} 
+
+
+nav::after {
+    content: "★  ★  ★  ★  ★  ★  ★  ★  ★  ★  ★  ★  ★  ★  ★";
+    position: absolute;
+    bottom: 100px; 
+    left: 10%;   
+    width: 100%;
+    font-size:2em;
+    color: white;
+    text-shadow: 0 0 10px gainsboro;
+    letter-spacing: 20px; 
+    transform: rotate(-2deg); 
+}
+
+main {
+    display: flex;
+    flex-direction:column-reverse;
+    min-height: 80vh;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-top: 1px solid grey;
+}
+
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+.Efecto-Glitch {
+    animation: flicker 0.4s infinite;
+    color: yellow;
+    text-shadow: 2px 2px rgb(220, 188, 7);
+}
+
+nav a:hover {
+    font-family: Impact, sans-serif;
+    color: black; 
+    transform: rotate(-2deg) scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+img:first-of-type{
+    width: 300px;
+    height: auto; 
+    left: auto;
+}
+img:last-of-type{
+    width: 300px;
+    height: auto; 
+}
+
+.ABSURDO{
+    color: white;
+}
+
+.Paranoid{
+    color: yellow;
+}
+
+footer p{
+    color: yellow;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.item {
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+}
+
+.item:hover img {
+    transform: scale(1.2) rotate(-5deg);
+    filter: grayscale(100%) contrast(150%);
+}
