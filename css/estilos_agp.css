@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url('../imagenes/trollFace.png'), auto;
+    cursor: url('../imagenes/Trollface.png'), auto;
 }
 
 body {
@@ -145,4 +145,5 @@ footer p{
 .item:hover img {
     transform: scale(1.2) rotate(-5deg);
     filter: grayscale(100%) contrast(150%);
+
 }
